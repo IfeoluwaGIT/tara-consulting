@@ -39,7 +39,7 @@ const Data = [
   {
     id: 6,
     icon: '/healthcare.jpg',
-    title: 'Healhcare',
+    title: 'Healthcare',
     description: 'This is a brief description for box 6.',
     buttonText: 'Learn More',
   },
@@ -86,9 +86,8 @@ const Sectors = () => {
               <Image 
                 src={box.icon} 
                 alt={`Icon ${box.id}`} 
-                layout="fill" 
-                objectFit="cover" 
-                className="rounded"
+                fill 
+                className="object-cover rounded"
               />
               <div className="absolute bottom-0 left-0 w-full bg-black bg-opacity-50 text-white text-center py-2">
                 <h3 className="text-lg font-semibold">{box.title}</h3>

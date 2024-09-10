@@ -13,11 +13,11 @@ const services = [
 
 const ServicesSection = () => {
   return (
-    <section className="services-section py-16 bg-header-blue">
+    <section className="services-section py-16">
       <h1 className="text-center text-4xl font-bold mb-8">Our Services</h1>
       
       {/* Full-width image */}
-      <div className="relative w-full h-[600px] mb-2">
+      <div className="relative w-full h-[700px] mb-2">
         <Image
           src="/interview.jpg" // Update with the correct image path
           alt="Services Image"

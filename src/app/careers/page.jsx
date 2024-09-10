@@ -1,6 +1,6 @@
 import JobOpenings from "../components/JobOpenings";
 
-const Jobs = () => {
+const Careers = () => {
   return (
     <div className="">
       <JobOpenings />
@@ -8,4 +8,4 @@ const Jobs = () => {
   );
 };
 
-export default Jobs;
+export default Careers;

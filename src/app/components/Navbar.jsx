@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const Navbar = () => {
   return (
@@ -7,10 +8,12 @@ const Navbar = () => {
         <Image src="/logo.jpg" alt="Tara Consulting Logo" className="h-10 w-28 mr-2 " width={32} height={32}/>
       </div>
       <div className="flex space-x-6">
-        <a href="#home" className="text-gray-600 hover:text-gray-900">Home</a>
-        <a href="#services" className="text-gray-600 hover:text-gray-900">Services</a>
-        <a href="#about" className="text-gray-600 hover:text-gray-900">About</a>
-        <a href="#contact" className="text-gray-600 hover:text-gray-900">Contact</a>
+        <Link href="/" className="text-white hover:text-amber-400">Home</Link>
+        <Link href="/services" className="text-white hover:text-amber-400">Services</Link>
+        <Link href="/about" className="text-white hover:text-amber-400">About</Link>
+        <Link href="/contact" className="text-white hover:text-amber-400">Contact</Link>
+        <Link href="/FAQ" className="text-white hover:text-amber-400">FAQ</Link>
+        <Link href="/careers" className="text-white hover:text-amber-400">Careers</Link>
       </div>
       <button className="ml-6 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">
         Get in Touch

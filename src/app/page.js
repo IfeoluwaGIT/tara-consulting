@@ -14,11 +14,10 @@ export default function Home() {
   return (
     <>
       <Header />
-      <Metrics />
       <Apart />
       <ServicesSection />
+      <Metrics />
       <Testimonial />
-      <ContactCollectionForm />
       <Blog />
       <WhatsAppChatSupport />
       <ClientLogos />

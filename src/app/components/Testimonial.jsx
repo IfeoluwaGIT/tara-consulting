@@ -45,12 +45,12 @@ const Testimonial = () => {
     ];
   
     return (
-      <section className="px-[10%] py-12 bg-header-blue text-white">
-        <h2 className="text-3xl font-bold text-center mb-8">What Our Clients Say</h2>
+      <section className="px-[10%] py-12 bg-header-peach text-text-color">
+        <h2 className="text-3xl font-bold text-center mb-8">Our Clients Love us!</h2>
         <div className="grid grid-cols-3 gap-8">
           {testimonials.map((testimonial) => (
-            <div key={testimonial.id} className="bg-white p-6 shadow rounded">
-              <p className="text-gray-700 mb-4">{testimonial.text}</p>
+            <div key={testimonial.id} className="bg-white border border-border-color p-6 shadow rounded">
+              <p className=" mb-4">{testimonial.text}</p>
               <div className="flex items-center mb-4">
                 {[...Array(testimonial.rating)].map((_, i) => (
                   <svg
@@ -63,8 +63,8 @@ const Testimonial = () => {
                   </svg>
                 ))}
               </div>
-              <h4 className="text-lg font-semibold text-gray-800">{testimonial.name}</h4>
-              <p className="text-gray-600">{testimonial.organization}</p>
+              <h4 className="text-lg font-semibold ">{testimonial.name}</h4>
+              <p>{testimonial.organization}</p>
             </div>
           ))}
         </div>

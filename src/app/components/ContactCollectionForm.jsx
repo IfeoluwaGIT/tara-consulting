@@ -39,8 +39,8 @@ const ContactCollectionForm = () => {
   };
 
   return (
-    <section className="min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-900 to-blue-950">
-      <div className="bg-white p-8 shadow-lg rounded-lg w-full max-w-4xl border border-gray-200">
+    <section className="min-h-screen flex items-center justify-center bg-header-peach border  ">
+      <div className="bg-white p-8 shadow-lg rounded-lg w-full max-w-4xl border border-border-color">
         <h2 className="text-3xl font-bold text-gray-800 text-center mb-8">
           HOW CAN WE ASSIST YOU?
         </h2>

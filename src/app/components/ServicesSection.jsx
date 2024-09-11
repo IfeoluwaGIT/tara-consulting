@@ -13,11 +13,11 @@ const services = [
 
 const ServicesSection = () => {
   return (
-    <section className="services-section py-16">
-      <h1 className="text-center text-4xl font-bold mb-8">Our Services</h1>
+    <section className="services-section ">
+      <h1 className="text-center text-text-color bg-slate-100 p-8 text-4xl font-bold uppercase ">Our Services</h1>
       
       {/* Full-width image */}
-      <div className="relative w-full h-[700px] mb-2">
+      <div className="relative w-full h-[700px]">
         <Image
           src="/interview.jpg" // Update with the correct image path
           alt="Services Image"
@@ -28,17 +28,17 @@ const ServicesSection = () => {
       </div>
 
       {/* Boxes Section */}
-      <div className="grid grid-cols-4 gap-8 px-16 relative  ">
+      <div className="grid grid-cols-4 gap-8 px-1 relative bg-header-peach text-text-color ">
         {services.map((service, index) => (
-          <div key={index} className="relative box bg-white shadow-lg p-4 text-center h-[350px] ">
+          <div key={index} className="relative box bg-slate-100 shadow-lg p-4 text-center h-[350px] border border-border-color mb-2">
             
             {/* Icon overlapping the image */}
-            <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-white p-2 rounded-full shadow-lg">
+            <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-slate-100 p-2 rounded-full shadow-lg">
               <span className="text-3xl">{service.icon}</span>
             </div>
 
             <h3 className="mt-12 text-xl font-semibold">{service.title}</h3>
-            <p className="mt-4 text-gray-600">{service.description}</p>
+            <p className="mt-4 ">{service.description}</p>
           </div>
         ))}
       </div>

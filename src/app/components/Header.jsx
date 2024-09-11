@@ -1,10 +1,14 @@
 import Hero from "./Hero";
+import Navbar from "./Navbar";
 const Header = () => {
   return (
-    <div className="bg-header-blue h-680 text-white">
-
+  
+   <div className="bg-custom-bg bg-cover bg-center bg-no-repeat h-screen text-text-color border border-black">
+   
+      <Navbar />
       <Hero />
-    </div>
+      </div>
+      
   );
 };
 

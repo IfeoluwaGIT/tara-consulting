@@ -9,6 +9,10 @@ module.exports = {
     extend: {
       colors: {
         'header-blue': '#0d0c22', 
+        'header-peach' : '#FFEBB7',
+        'text-color' : '#000080',
+        'button-hover' : '#F76C5E',
+        'border-color' : '#4E4E4E'
       },
       height: {
         '680': '680px',
@@ -16,6 +20,9 @@ module.exports = {
       width: {
         '1440': '1440px',
       },
+      backgroundImage : {
+         'custom-bg': "url('https://images.pexels.com/photos/4344860/pexels-photo-4344860.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')"
+      }
     },
   },
   plugins: [],

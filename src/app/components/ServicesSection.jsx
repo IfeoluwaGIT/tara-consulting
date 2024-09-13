@@ -14,7 +14,7 @@ const services = [
 const ServicesSection = () => {
   return (
     <section className="services-section ">
-      <h1 className="text-center text-text-color bg-slate-100 p-8 text-4xl font-bold uppercase pt-24  ">Our Services</h1>
+      <h1 className="text-center text-text-color bg-slate-100 p-8 text-4xl font-bold uppercase pt-24 ">Our Services</h1>
       
       {/* Full-width image */}
       <div className="relative w-full h-[700px]">

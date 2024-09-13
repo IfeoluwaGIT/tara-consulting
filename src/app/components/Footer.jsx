@@ -1,3 +1,4 @@
+import { FaInstagram, FaFacebook, FaLinkedin, FaTwitter } from "react-icons/fa";
 import Image from "next/image";
 import Link from "next/link";
 import Newsletter from "./Newsletter";
@@ -10,31 +11,61 @@ const Footer = () => {
         {/* LEFT */}
         <div className="flex-1 flex flex-col gap-8">
           <Link href="/">
-            <div className="text-2xl tracking-wide">Tara</div>
+            <div className="font-medium text-lg uppercase">Tara</div>
           </Link>
           <p className="mb-4">
           22A, Olatunbosun Street, Shonibare Estate, Maryland, Lagos, Nigeria
           </p>
-          <span className="font-semibold">hello@lama.dev</span>
+          <span className="font-semibold">tara@info.com</span>
           <span className="font-semibold">+1 234 567 890</span>
-          <div className="flex gap-6 mt-4">
-            <Image src="/facebook.png" alt="" width={16} height={16} />
-            <Image src="/instagram.png" alt="" width={16} height={16} />
-            <Image src="/youtube.png" alt="" width={16} height={16} />
-            <Image src="/x.png" alt="" width={16} height={16} />
-          </div>
-        </div>
         
+        </div>
+
+        <div className="flex flex-col gap-6">
+        <h1 className="font-medium text-lg uppercase">Socials </h1>
+      {/* Instagram */}
+      <Link href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+        <div className="flex items-center gap-2 text-pink-500 hover:text-pink-600 mb-4">
+          <FaInstagram size={24} />
+          <span>Instagram</span>
+        </div>
+      </Link>
+
+      {/* Facebook */}
+      <Link href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+        <div className="flex items-center gap-2 text-blue-700 hover:text-blue-800 mb-4">
+          <FaFacebook size={24} />
+          <span>Facebook</span>
+        </div>
+      </Link>
+
+      {/* LinkedIn */}
+      <Link href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+        <div className="flex items-center gap-2 text-blue-600 hover:text-blue-700 mb-4">
+          <FaLinkedin size={24} />
+          <span>LinkedIn</span>
+        </div>
+      </Link>
+
+      {/* Twitter (X) */}
+      <Link href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+        <div className="flex items-center gap-2 text-sky-500 hover:text-sky-600 ">
+          <FaTwitter size={24} />
+          <span>X (Twitter)</span>
+        </div>
+      </Link>
+    </div>
         {/* CENTER */}
         <div className="hidden lg:flex flex-1 justify-center items-start">
           <div className="flex flex-col gap-6">
             <h1 className="font-medium text-lg">COMPANY</h1>
             <div className="flex flex-col gap-6">
-              <Link href="">About Us</Link>
-              <Link href="">Careers</Link>
-              <Link href="">Affiliates</Link>
-              <Link href="">Blog</Link>
-              <Link href="">Contact Us</Link>
+            <Link href="/">Home</Link>
+              <Link href="/about">About Us</Link>
+              <Link href="/careers">Careers</Link>
+              <Link href="/FAQ">FAQ</Link>
+              <Link href="/blog">Blog</Link>
+              <Link href="/contact">Contact Us</Link>
             </div>
           </div>
         </div>
@@ -49,7 +80,7 @@ const Footer = () => {
       
       {/* BOTTOM */}
       <div className="flex flex-col md:flex-row items-center justify-between gap-8 mt-16">
-        <div>© 2024 TARA</div>
+        <div>© 2024 TARA. All Rights Reserved </div>
         <div className="flex flex-col gap-8 md:flex-row">
           <div>
             <span className=" mr-4">Language</span>

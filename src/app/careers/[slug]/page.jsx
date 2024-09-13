@@ -70,7 +70,7 @@ const JobDetails = ({ params }) => {
   }
 
   return (
-    <section className="px-[10%] py-12 bg-gray-100 text-gray-700">
+    <section className="px-[10%] py-12 bg-gray-100 text-text-color">
       <div className="max-w-4xl mx-auto border p-6 shadow-md rounded-xl bg-white mt-10">
         <h1 className="text-2xl font-bold">{job.title}</h1>
 
@@ -90,7 +90,7 @@ const JobDetails = ({ params }) => {
 
           {/* Right section with job description */}
           <div className="w-1/2">
-            <p className="text-sm text-gray-600">{job.description}</p>
+            <p className="text-sm text-text-color">{job.description}</p>
           </div>
         </div>
 

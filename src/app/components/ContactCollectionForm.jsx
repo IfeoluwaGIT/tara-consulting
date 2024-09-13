@@ -41,7 +41,7 @@ const ContactCollectionForm = () => {
 
   return (
     <>
-    <section className="min-h-screen flex items-center justify-center bg-slate-100 border text-text-color ">
+    <section className="min-h-screen flex items-center justify-center bg-header-peach border text-text-color ">
       <div className="bg-white p-8 shadow-lg rounded-lg w-full max-w-4xl mr-8">
         <h2 className="text-3xl font-bold  text-center mb-8">
           HOW CAN WE ASSIST YOU?

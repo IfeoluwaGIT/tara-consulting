@@ -58,7 +58,7 @@ const Careers = () => {
   ]);
 
   return (
-    <section className="px-[10%] py-12 bg-gray-100 text-gray-700">
+    <section className="px-[10%] py-12 bg-header-peach text-gray-700">
        <div className="relative w-full h-[700px]">
         <Image
           src="/careerspic.jpg" // Update with the correct image path
@@ -102,6 +102,18 @@ const Careers = () => {
             </div>
           </div>
         ))}
+      </div>
+      <div className="mt-16 text-center">
+        <p className="text-lg mb-4 text-text-color ">
+          Did not find any jobs that align with your skills and aspirations? No
+          worries!
+        </p>
+        <Link
+          href="/submit-cv"
+          className="inline-block bg-text-color text-white py-3 px-8 rounded-lg shadow hover:bg-blue-700 transition-colors"
+        >
+          Submit your CV
+        </Link>
       </div>
     </section>
   );

@@ -20,8 +20,9 @@ export default function Home() {
     <div className="">
       <ServicesSection />
       </div>
-      <Metrics />
+      
       <Testimonial />
+      <Metrics />
       <Blog />
       <WhatsAppChatSupport />
       <ClientLogos />

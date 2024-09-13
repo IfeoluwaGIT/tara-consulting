@@ -12,7 +12,7 @@ const ClientLogos = () => {
   ];
 
   return (
-    <section className="py-12 bg-slate-100">
+    <section className="py-12 bg-header-peach border border-border-color"> 
     <h2 className="text-center text-2xl font-bold mb-8">Our Clients</h2>
     <div className="overflow-hidden relative">
       <div className="flex animate-scroll whitespace-nowrap justify-center ">

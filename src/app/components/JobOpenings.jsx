@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const JobOpenings = () => {
   const jobData = [
     {
@@ -109,8 +111,17 @@ const JobOpenings = () => {
   ];
 
   return (
-    <div className="max-w-7xl mx-auto px-4 py-8">
-      <h1 className="text-3xl font-bold text-center mb-8">
+    <div className="max-w-7xl mx-auto px-4 py-8 mt-12 text-text-color">
+        <div className="relative w-full h-[700px]">
+        <Image
+          src="/careerspic.jpg" // Update with the correct image path
+          alt="Services Image"
+          layout="fill"
+          objectFit="cover"
+          className="w-full h-full rounded-2xl"
+        />
+      </div>
+      <h1 className="text-3xl font-bold text-center mt-6 mb-8">
         Job Openings
       </h1>
       <p className="text-center mb-12 text-lg">

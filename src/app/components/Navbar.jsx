@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <div className="w-[60%] mx-auto">
+    <div className="w-full fixed top-0 left-0 z-50 mx-auto">
       <nav className="flex items-center justify-between px-4 py-4 bg-header-peach border border-black rounded-lg shadow-md">
         <div className="flex items-center">
           <Image src="/logo.jpg" alt="Tara Consulting Logo" className="h-10 w-28" width={32} height={32} />

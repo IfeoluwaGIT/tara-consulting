@@ -16,10 +16,10 @@ const Newsletter = () => {
   return (
     
       <section className="max-w-full mx-auto">
-        <h2 className="text-3xl font-bold text-white mb-4">
+        <h2 className="text-3xl font-bold text-text-color mb-4">
           Stay Informed with Our Newsletter
         </h2>
-        <p className="text-gray-600 mb-8">
+        <p className=" mb-8">
           Would you like to receive updates from TARA on the most recent industry insights, news, and developments? 
           Subscribe to our newsletter and be the first to know about new trends, valuable resources, and exciting opportunities. 
           Join our community today!
@@ -43,12 +43,12 @@ const Newsletter = () => {
           />
           <button
             type="submit"
-            className="bg-blue-600 text-white p-3 rounded hover:bg-blue-700 transition duration-300"
+            className="bg-text-color text-white p-3 rounded hover:bg-button-hover transition duration-300"
           >
             Subscribe
           </button>
         </form>
-        <p className="text-gray-500 text-sm mt-4">
+        <p className="text-sm mt-4">
           By subscribing, you agree to receive our newsletters and promotional emails. We respect your privacy and will not share 
           your information with third parties. You can unsubscribe at any time.
         </p>

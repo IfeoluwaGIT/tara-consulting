@@ -10,12 +10,16 @@ import WhatsAppChatSupport from "./components/Whatsapp";
 import ClientLogos from "./components/ClientLogos";
 
 
+
+
 export default function Home() {
   return (
     <>
       <Header />
       <Apart />
+    <div className="">
       <ServicesSection />
+      </div>
       <Metrics />
       <Testimonial />
       <Blog />

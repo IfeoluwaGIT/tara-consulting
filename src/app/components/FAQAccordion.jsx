@@ -1,6 +1,8 @@
 "use client";
 
+import Image from 'next/image';
 import { useState } from 'react';
+
 
 const faqs = [
   {
@@ -59,20 +61,28 @@ const FAQAccordion = () => {
   };
 
   return (
-    <section className="px-8 py-12 bg-gray-100">
-      <h1 className="text-3xl font-bold text-center mb-6">Frequently Asked Questions</h1>
-      <div className="max-w-4xl mx-auto grid grid-cols-1 gap-6">
+    <section className="px-8 py-12 bg-header-peach text-text-color mt-10">
+      <div className="relative w-[1000px] h-[800px] ml-[25%]  ">
+        <Image
+          src="/faqpic.jpg" // Update with the correct image path
+          alt="Services Image"
+          layout="fill"
+          objectFit="cover"
+          className="w-full h-full rounded-lg"
+        />
+      </div>
+      <div className="max-w-4xl mx-auto grid grid-cols-1 gap-6 mt-8">
         {faqs.map((faq, index) => (
           <div key={index} className="mb-4">
             <button
-              className="w-full text-left bg-white p-6 rounded-md shadow-md transition-transform transform hover:scale-105 focus:outline-none"
+              className="w-full text-left p-6 rounded-md shadow-md transition-transform transform hover:scale-105 focus:outline-none"
               onClick={() => toggleAccordion(index)}
             >
               <h2 className="text-xl font-semibold uppercase">{faq.question}</h2>
             </button>
             {activeIndex === index && (
-              <div className="bg-gray-50 p-4 rounded-b-md shadow-inner">
-                <p className="text-gray-700 whitespace-pre-line">{faq.answer}</p>
+              <div className=" p-4 rounded-b-md shadow-inner">
+                <p className="whitespace-pre-line text-xl">{faq.answer}</p>
               </div>
             )}
           </div>

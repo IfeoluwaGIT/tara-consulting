@@ -1,11 +1,12 @@
-import JobOpenings from "../components/JobOpenings";
+import Careers from "../components/Career";
 
-const Careers = () => {
+
+const CareersPage = () => {
   return (
     <div className="">
-      <JobOpenings />
+      <Careers />
     </div>
   );
 };
 
-export default Careers;
+export default CareersPage;

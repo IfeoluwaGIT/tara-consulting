@@ -1,5 +1,6 @@
 "use client"
 
+import Image from 'next/image';
 import { useState } from 'react';
 
 const ContactCollectionForm = () => {
@@ -39,16 +40,18 @@ const ContactCollectionForm = () => {
   };
 
   return (
-    <section className="min-h-screen flex items-center justify-center bg-header-peach border  ">
-      <div className="bg-white p-8 shadow-lg rounded-lg w-full max-w-4xl border border-border-color">
-        <h2 className="text-3xl font-bold text-gray-800 text-center mb-8">
+    <>
+    <section className="min-h-screen flex items-center justify-center bg-slate-100 border text-text-color ">
+      <div className="bg-white p-8 shadow-lg rounded-lg w-full max-w-4xl mr-8">
+        <h2 className="text-3xl font-bold  text-center mb-8">
           HOW CAN WE ASSIST YOU?
         </h2>
-        <form onSubmit={handleSubmit} className="space-y-6">
+        <p className='text-center mb-8'>Interested in leveraging Taras all-inclusive staffing, recruitment, and payroll services? We are eager to connect with you! Simply complete the form below with some key details about your requirements. Our team will reach out to you shortly.</p>
+        <form onSubmit={handleSubmit} className="space-y-6 ">
           {/* Contact Information */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             <div>
-              <label htmlFor="fullName" className="block text-sm font-medium text-gray-700">
+              <label htmlFor="fullName" className="block text-sm font-medium ">
                 Full Name
               </label>
               <input
@@ -62,7 +65,7 @@ const ContactCollectionForm = () => {
               />
             </div>
             <div>
-              <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+              <label htmlFor="email" className="block text-sm font-medium ">
                 Email Address
               </label>
               <input
@@ -94,7 +97,7 @@ const ContactCollectionForm = () => {
           {/* Company Information */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             <div>
-              <label htmlFor="companyName" className="block text-sm font-medium text-gray-700">
+              <label htmlFor="companyName" className="block text-sm font-medium ">
                 Company Name
               </label>
               <input
@@ -122,7 +125,7 @@ const ContactCollectionForm = () => {
               />
             </div>
             <div>
-              <label htmlFor="employees" className="block text-sm font-medium text-gray-700">
+              <label htmlFor="employees" className="block text-sm font-medium ">
                 Number of Employees
               </label>
               <input
@@ -139,7 +142,7 @@ const ContactCollectionForm = () => {
 
           {/* Service Requirements */}
           <div>
-            <label className="block text-sm font-medium text-gray-700">
+            <label className="block text-sm font-medium ">
               What specific service(s) are you interested in? (Please select all that apply)
             </label>
             <div className="grid grid-cols-2 gap-4 mt-2">
@@ -160,7 +163,7 @@ const ContactCollectionForm = () => {
 
           {/* Additional Details */}
           <div>
-            <label htmlFor="details" className="block text-sm font-medium text-gray-700">
+            <label htmlFor="details" className="block text-sm font-medium ">
               Please briefly describe why you require our services and any specific details you would like to share:
             </label>
             <textarea
@@ -175,7 +178,7 @@ const ContactCollectionForm = () => {
 
           {/* Preferred Contact Method */}
           <div>
-            <label className="block text-sm font-medium text-gray-700">
+            <label className="block text-sm font-medium ">
               How would you prefer us to contact you? (Please select one)
             </label>
             <div className="flex space-x-4 mt-2">
@@ -202,14 +205,25 @@ const ContactCollectionForm = () => {
             </p>
             <button
               type="submit"
-              className="mt-4 w-full px-6 py-3 bg-blue-600 text-white font-semibold rounded hover:bg-blue-700 transition duration-300 shadow-md"
+              className="mt-4 w-full px-6 py-3 bg-text-color text-white font-semibold rounded hover:bg-button-hover transition duration-300 shadow-md"
             >
               Submit
             </button>
           </div>
         </form>
       </div>
+      <div className="w-1/2 flex items-center justify-center ">
+          <Image
+            src="/assist.jpg" // Replace with your image path
+            alt="Your Image Description"
+            width={500} // Adjust width as needed
+            height={500} // Adjust height as needed
+            className=" w-[100%] h-[850px]  shadow-lg "
+          />
+        </div>
     </section>
+    
+    </>
   );
 };
 

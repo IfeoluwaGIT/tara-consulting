@@ -4,7 +4,7 @@ const Hero = () => {
   return (
     <section className="flex items-center justify-between  px-[20%] py-12  ">
     <div className="text-center">
-      <h1 className="text-5xl font-bold text-color ">Global Workforce Solutions for a Competitive Edge </h1>
+      <h1 className="text-5xl font-bold text-color mt-10 ">Global Workforce Solutions for a Competitive Edge </h1>
       <p className="text-color mb-6">
       Simplifying global recruitment, staff and payroll management while offering comprehensive HR solutions 
       </p>

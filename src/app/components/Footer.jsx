@@ -4,7 +4,7 @@ import Newsletter from "./Newsletter";
 
 const Footer = () => {
   return (
-    <div className="py-24 px-4 md:px-8 lg:px-16 xl:px-32 2xl:px-64 bg-header-blue text-white text-sm">
+    <div className="py-8 px-4 md:px-8 lg:px-16 xl:px-32 2xl:px-42 bg-slate-100 text-text-color text-sm border border-border-color">
       {/* TOP */}
       <div className="flex flex-col md:flex-row gap-24-">
         {/* LEFT */}
@@ -49,14 +49,14 @@ const Footer = () => {
       
       {/* BOTTOM */}
       <div className="flex flex-col md:flex-row items-center justify-between gap-8 mt-16">
-        <div>© 2024 Whisk'n Mix</div>
+        <div>© 2024 TARA</div>
         <div className="flex flex-col gap-8 md:flex-row">
           <div>
-            <span className="text-gray-500 mr-4">Language</span>
+            <span className=" mr-4">Language</span>
             <span className="font-medium">Nigeria | English</span>
           </div>
           <div>
-            <span className="text-gray-500 mr-4">Currency</span>
+            <span className=" mr-4">Currency</span>
             <span className="font-medium">NGN</span>
           </div>
         </div>

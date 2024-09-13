@@ -29,12 +29,12 @@ const Blog = () => {
       <h2 className="text-3xl font-bold text-text-color mb-8 text-center">
         Latest on Human Resources Management
       </h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10">
         {posts.length > 0 ? (
           posts.map((post, index) => (
             <div
               key={index}
-              className="bg-slate-100 p-6 border rounded-lg shadow-lg transition-transform transform hover:scale-105"
+              className="bg-slate-100 p-12 rounded-lg shadow-lg transition-transform transform hover:scale-105 border border-border-color"
             >
               <h3 className="text-xl font-semibold  mb-2">{post.title}</h3>
               <p className="text-sm text-gray-600 mb-4">Posted by {post.author}</p>

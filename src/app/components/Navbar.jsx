@@ -88,10 +88,11 @@ const Navbar = () => {
             </Link>
           ))}
         </div>
-
+        <Link href="/contact">
         <button className="hidden sm:block ml-6 px-4 py-2 bg-text-color text-white rounded hover:bg-button-hover">
           Get in Touch
         </button>
+        </Link>
       </nav>
 
       {/* Dropdown Menu for mobile */}

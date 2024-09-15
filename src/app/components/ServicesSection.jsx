@@ -14,7 +14,7 @@ const services = [
 const ServicesSection = () => {
   return (
     <section className="services-section py-8 px-4 md:px-8 lg:px-16 xl:px-32  text-text-color">
-      <h1 className="text-center text-text-color bg-slate-100 p-4 md:p-8 lg:p-12 text-3xl md:text-4xl font-bold uppercase pt-16 md:pt-24">Our Services</h1>
+      <h1 className="text-center text-text-color  p-4 md:p-8 lg:p-12 text-3xl md:text-4xl font-bold uppercase pt-16 md:pt-24">Our Services</h1>
       
       {/* Full-width image */}
       <div className="relative w-full h-[400px] md:h-[500px] lg:h-[700px]">
@@ -23,7 +23,7 @@ const ServicesSection = () => {
           alt="Services Image"
           fill
           style={{ objectFit: 'cover' }}
-          className="w-full h-full"
+          className="w-full h-full rounded-lg"
         />
       </div>
 

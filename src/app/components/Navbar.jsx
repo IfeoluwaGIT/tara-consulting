@@ -59,17 +59,17 @@ const Navbar = () => {
             <motion.div 
               variants={topVariants}
               animate={isOpen ? "opened" : "closed"}
-              className="w-10 h-1 bg-black rounded origin-left"
+              className="w-10 h-1 bg-text-color rounded origin-left"
             ></motion.div>
             <motion.div
               variants={centerVariants}
               animate={isOpen ? "opened" : "closed"}
-              className="w-10 h-1 bg-black rounded"
+              className="w-10 h-1 bg-text-color rounded"
             ></motion.div>
             <motion.div
               variants={bottomVariants}
               animate={isOpen ? "opened" : "closed"}
-              className="w-10 h-1 bg-black rounded origin-left"
+              className="w-10 h-1 bg-text-color rounded origin-left"
             ></motion.div>
           </button>
         </div>

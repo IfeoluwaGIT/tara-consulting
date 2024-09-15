@@ -13,32 +13,32 @@ const services = [
 
 const ServicesSection = () => {
   return (
-    <section className="services-section ">
-      <h1 className="text-center text-text-color bg-slate-100 p-8 text-4xl font-bold uppercase pt-24 ">Our Services</h1>
+    <section className="services-section py-8 px-4 md:px-8 lg:px-16 xl:px-32  text-text-color">
+      <h1 className="text-center text-text-color bg-slate-100 p-4 md:p-8 lg:p-12 text-3xl md:text-4xl font-bold uppercase pt-16 md:pt-24">Our Services</h1>
       
       {/* Full-width image */}
-      <div className="relative w-full h-[700px]">
+      <div className="relative w-full h-[400px] md:h-[500px] lg:h-[700px]">
         <Image
           src="/interview.jpg" // Update with the correct image path
           alt="Services Image"
-          layout="fill"
-          objectFit="cover"
+          fill
+          style={{ objectFit: 'cover' }}
           className="w-full h-full"
         />
       </div>
 
       {/* Boxes Section */}
-      <div className="grid grid-cols-4 gap-8 px-1 relative bg-header-peach text-text-color ">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8 px-2 md:px-4 relative bg-header-peach text-text-color">
         {services.map((service, index) => (
-          <div key={index} className="relative box bg-slate-100 shadow-lg p-4 text-center h-[350px] border border-border-color mb-2">
+          <div key={index} className="relative box bg-slate-100 shadow-lg p-4 text-center h-auto border border-border-color mb-4">
             
             {/* Icon overlapping the image */}
             <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-slate-100 p-2 rounded-full shadow-lg">
-              <span className="text-3xl">{service.icon}</span>
+              <span className="text-2xl md:text-3xl">{service.icon}</span>
             </div>
 
-            <h3 className="mt-12 text-xl font-semibold">{service.title}</h3>
-            <p className="mt-4 ">{service.description}</p>
+            <h3 className="mt-12 text-lg md:text-xl font-semibold">{service.title}</h3>
+            <p className="mt-4 text-sm md:text-base">{service.description}</p>
           </div>
         ))}
       </div>

@@ -34,29 +34,31 @@ const boxData = [
 
 const Apart = () => {
   return (
-    <section className="py-12 bg-header-peach  h-[1000px] border border-black">
-      <div className="flex flex-col lg:flex-row px-8 lg:px-[10%]">
+    <section className="py-12 bg-header-peach border border-black">
+      <div className="flex flex-col lg:flex-row px-4 sm:px-8 lg:px-[10%]">
         {/* Left half - Image */}
-        <div className="relative w-1/2 mb-8 border border-black lg:mb-0 mr-12  ">
+        <div className="relative w-full sm:w-1/2 mb-8 border border-black lg:mb-0 mr-0 sm:mr-12">
           <Image
-            src="/hr-team.jpg" // Replace with the path to your image
+            src="/hr-team.jpg"
             alt="Illustration"
             fill
-            sizes="(max-width: 1024px) 100vw, 50vw" // Ensures the image is 50% width on larger screens
-            className="object-cover rounded-lg shadow-lg "
+            sizes="(max-width: 1024px) 100vw, 50vw"
+            className="object-cover rounded-lg shadow-lg"
           />
         </div>
 
         {/* Right half - Boxes */}
-        <div className="w-1/2">
+        <div className="w-full sm:w-1/2">
           <div className="text-center mb-8">
-            <h2 className=" font-bold text-text-color  mb-4 uppercase text-5xl">What sets us apart?</h2>
-            <p className="text-color">
+            <h2 className="text-xl sm:text-5xl font-bold text-text-color mb-4 uppercase">
+              What sets us apart?
+            </h2>
+            <p className="text-text-color">
               At TARA, we distinguish ourselves through several unique features, approaches, and values that set us apart from other staffing, recruitment, and payroll agencies in Nigeria.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 ">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {boxData.map((box) => (
               <div key={box.id} className="bg-slate-100 text-text-color border border-black p-6 shadow rounded transition-transform transform hover:scale-105">
                 <Image
@@ -67,7 +69,7 @@ const Apart = () => {
                   width={48}
                 />
                 <h3 className="text-xl font-semibold mb-2">{box.title}</h3>
-                <p className=" mb-4">
+                <p className="mb-4">
                   {box.description}
                 </p>
                 <button className="px-4 py-2 bg-text-color text-white rounded hover:bg-button-hover">

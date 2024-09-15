@@ -1,5 +1,10 @@
 import Link from "next/link";
 
+export const metadata = {
+  title: "Careers at Tara Consulting",
+  description: "Careers at the Top human resources company in lagos",
+};
+
 // Sample job data
 const jobData = [
   {

@@ -3,7 +3,6 @@
 import Image from 'next/image';
 import { useState } from 'react';
 
-
 const faqs = [
   {
     question: 'What industries does TARA specialize in?',
@@ -32,7 +31,7 @@ const faqs = [
   },
   {
     question: 'How does TARA handle payroll management?',
-    answer: `TARA's payroll management services include:
+    answer: `TARA\'s payroll management services include:
     - Accurate and timely processing of payroll
     - Tax computation and statutory deductions in accordance with regulations
     - Secure and reliable payment disbursements
@@ -61,13 +60,13 @@ const FAQAccordion = () => {
   };
 
   return (
-    <section className="px-8 py-12 bg-header-peach text-text-color mt-10">
-      <div className="relative w-[1000px] h-[800px] ml-[25%]  ">
+    <section className="px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 py-12 bg-header-peach text-text-color mt-10">
+      <div className="relative w-full h-[400px] sm:h-[600px] md:h-[800px] lg:w-[800px] lg:h-[600px] mx-auto">
         <Image
-          src="/faqpic.jpg" // Update with the correct image path
+          src="/faqpic.jpg" 
           alt="Services Image"
-          layout="fill"
-          objectFit="cover"
+          fill
+          style={{ objectFit: 'cover' }}
           className="w-full h-full rounded-lg"
         />
       </div>
@@ -75,14 +74,14 @@ const FAQAccordion = () => {
         {faqs.map((faq, index) => (
           <div key={index} className="mb-4">
             <button
-              className="w-full text-left p-6 rounded-md shadow-md transition-transform transform hover:scale-105 focus:outline-none"
+              className="w-full text-left p-4 sm:p-6 md:p-8 rounded-md shadow-md transition-transform transform hover:scale-105 focus:outline-none"
               onClick={() => toggleAccordion(index)}
             >
-              <h2 className="text-xl font-semibold uppercase">{faq.question}</h2>
+              <h2 className="text-lg sm:text-xl md:text-2xl font-semibold uppercase">{faq.question}</h2>
             </button>
             {activeIndex === index && (
-              <div className=" p-4 rounded-b-md shadow-inner">
-                <p className="whitespace-pre-line text-xl">{faq.answer}</p>
+              <div className="p-4 rounded-b-md shadow-inner">
+                <p className="whitespace-pre-line text-base sm:text-lg md:text-xl">{faq.answer}</p>
               </div>
             )}
           </div>

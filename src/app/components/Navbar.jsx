@@ -47,7 +47,7 @@ const Navbar = () => {
 
   return (
     <div className="w-full fixed top-0 left-0 z-50 mx-auto">
-      <nav className="flex items-center justify-between px-4 py-4 bg-header-peach border border-black rounded-lg shadow-md">
+      <nav className="flex items-center justify-between px-[16px] py-[16px] bg-header-peach border border-black rounded-lg shadow-md">
         {/* Logo */}
         <div className="flex items-center">
           <Image src="/logo.jpg" alt="Tara Consulting Logo" className="h-10 w-28" width={32} height={32} />
@@ -88,10 +88,11 @@ const Navbar = () => {
             </Link>
           ))}
         </div>
-
+          <Link href="/contact">
         <button className="hidden sm:block ml-6 px-4 py-2 bg-text-color text-white rounded hover:bg-button-hover">
           Get in Touch
         </button>
+        </Link>
       </nav>
 
      {/* Dropdown Menu for mobile */}

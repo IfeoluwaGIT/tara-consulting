@@ -4,7 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { usePathname } from "next/navigation"
+import { usePathname } from "next/navigation"; // Step 1: Import usePathname
 
 const links = [
   { url: "/", title: "Home" },
@@ -17,7 +17,7 @@ const links = [
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const pathname = usePathname();
+  const pathname = usePathname(); // Step 2: Initialize usePathname
 
   const toggleMenu = () => {
     setIsOpen((prev) => !prev);
@@ -47,7 +47,7 @@ const Navbar = () => {
 
   return (
     <div className="w-full fixed top-0 left-0 z-50 mx-auto">
-      <nav className="flex items-center justify-between px-[16px] py-[16px] bg-header-peach border border-black rounded-lg shadow-md">
+      <nav className="flex items-center justify-between px-4 py-4 bg-header-peach border border-black rounded-lg shadow-md">
         {/* Logo */}
         <div className="flex items-center">
           <Image src="/logo.jpg" alt="Tara Consulting Logo" className="h-10 w-28" width={32} height={32} />
@@ -55,11 +55,11 @@ const Navbar = () => {
 
         {/* Hamburger menu for mobile */}
         <div className="sm:hidden ">
-          <button onClick={toggleMenu} className="relative w-[40px] h-[32px] flex flex-col justify-between z-50 ">
+          <button onClick={toggleMenu} className="relative w-10 h-8 flex flex-col justify-between z-50 ">
             <motion.div 
               variants={topVariants}
               animate={isOpen ? "opened" : "closed"}
-              className="w-10 h-1 bg-black rounded origin-left"
+              className="w-10 h-1 bg-text-color rounded origin-left"
             ></motion.div>
             <motion.div
               variants={centerVariants}
@@ -88,15 +88,14 @@ const Navbar = () => {
             </Link>
           ))}
         </div>
-          <Link href="/contact">
+
         <button className="hidden sm:block ml-6 px-4 py-2 bg-text-color text-white rounded hover:bg-button-hover">
           Get in Touch
         </button>
-        </Link>
       </nav>
 
-     {/* Dropdown Menu for mobile */}
-     {isOpen && (
+      {/* Dropdown Menu for mobile */}
+      {isOpen && (
         <motion.div
           variants={listVariants}
           initial="closed"
@@ -111,7 +110,7 @@ const Navbar = () => {
               <Link 
                 href={link.url}
                 className={`hover:text-amber-400 px-3 py-2 rounded ${
-                  pathname === link.url ? "bg-text-color" : ""
+                  pathname === link.url ? "bg-black" : ""
                 }`} // Step 3: Conditionally apply active class for mobile
               >
                 {link.title}

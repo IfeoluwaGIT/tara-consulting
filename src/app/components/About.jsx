@@ -16,7 +16,7 @@ const About = () => {
             Our expertise spans across multiple industries including finance, technology, healthcare, and manufacturing, where we have continuously provided exceptional value. At Tara, we believe in a people-first approach, and our commitment to workforce development and client satisfaction has made us the go-to HR partner for businesses of all sizes.
           </p>
           <p className="text-lg mb-6">
-            Our team of experts works closely with clients to understand their specific needs, ensuring we deliver solutions that drive both short-term gains and long-term success. Whether you're looking for recruitment support, payroll management, or strategic HR consulting, Tara Consulting is here to help.
+            Our team of experts works closely with clients to understand their specific needs, ensuring we deliver solutions that drive both short-term gains and long-term success. Whether you are looking for recruitment support, payroll management, or strategic HR consulting, Tara Consulting is here to help.
           </p>
         </div>
 

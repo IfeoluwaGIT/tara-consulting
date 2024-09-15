@@ -36,7 +36,7 @@ const AboutTara = () => {
           alt="Tara Consulting - Recruitment and HR Management"
           width={500}
           height={400}
-          className="rounded-2xl shadow-lg object-cover w-[1000px]"
+          className="rounded-3xl shadow-lg object-cover w-[1000px]"
         />
       </div>
     </section>

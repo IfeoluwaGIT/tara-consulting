@@ -59,7 +59,7 @@ const ContactCollectionForm = () => {
             HOW CAN WE ASSIST YOU?
           </h2>
           <p className='text-center mb-8'>
-            Interested in leveraging Tara's all-inclusive staffing, recruitment, and payroll services? Simply complete the form below with key details about your requirements, and our team will reach out to you shortly.
+            Interested in leveraging Taras all-inclusive staffing, recruitment, and payroll services? Simply complete the form below with key details about your requirements, and our team will reach out to you shortly.
           </p>
 
           <form onSubmit={handleSubmit} className="space-y-6">

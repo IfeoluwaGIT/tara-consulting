@@ -5,12 +5,12 @@ const About = () => {
     <section className="text-center py-16 px-4 md:px-8 lg:px-16  text-text-color mt-8">
       {/* Container */}
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-        
+
         {/* Text Section */}
         <div>
           <h2 className="text-3xl font-bold mb-6">About Tara Consulting</h2>
           <p className="text-lg mb-6">
-            Tara Consulting is a leading human resource agency, with over 10 years of excellence in delivering top-tier staffing, recruitment, payroll, and HR services. We pride ourselves on helping businesses grow by providing tailored human resource solutions. 
+            Tara Consulting is a leading human resource agency, with over 10 years of excellence in delivering top-tier staffing, recruitment, payroll, and HR services. We pride ourselves on helping businesses grow by providing tailored human resource solutions.
           </p>
           <p className="text-lg mb-6">
             Our expertise spans across multiple industries including finance, technology, healthcare, and manufacturing, where we have continuously provided exceptional value. At Tara, we believe in a people-first approach, and our commitment to workforce development and client satisfaction has made us the go-to HR partner for businesses of all sizes.

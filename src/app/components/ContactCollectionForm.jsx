@@ -41,7 +41,7 @@ const ContactCollectionForm = () => {
 
   return (
     <>
-      <section className="min-h-screen flex flex-col lg:flex-row items-center justify-center bg-header-peach border text-text-color p-4">
+      <section className="min-h-screen flex flex-col lg:flex-row items-center justify-center bg-header-peach border text-text-color p-4 mt-10">
         {/* Image Section */}
         <div className="w-full lg:w-1/2 flex justify-center lg:mr-4">
           <Image
@@ -54,7 +54,7 @@ const ContactCollectionForm = () => {
         </div>
 
         {/* Form Section */}
-        <div className="bg-white p-4 shadow-lg rounded-lg w-full lg:w-1/2">
+        <div className="bg-white p-4 shadow-lg rounded-lg w-full lg:w-1/2 mt-6">
           <h2 className="text-3xl font-bold text-center mb-6">
             HOW CAN WE ASSIST YOU?
           </h2>

@@ -4,7 +4,7 @@ import Newsletter from "./Newsletter";
 
 const Footer = () => {
   return (
-    <div className="py-8 px-4 md:px-8 lg:px-16 xl:px-32 2xl:px-42 bg-slate-100 text-text-color text-sm border border-border-color">
+    <div className="py-8 px-4 md:px-8 lg:px-16 lg:py-1 xl:px-32 2xl:px-42 bg-slate-100 text-text-color text-sm border border-border-color">
       {/* TOP */}
       <div className="flex flex-col md:flex-row gap-8 md:gap-24">
         {/* LEFT */}

@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import Image from 'next/image';
 import { useState } from 'react';
@@ -41,30 +41,30 @@ const ContactCollectionForm = () => {
 
   return (
     <>
-      <section className="min-h-screen flex flex-col lg:flex-row items-center justify-center bg-header-peach border text-text-color">
-        {/* Image on top for small screens, side for large screens */}
-        <div className="w-full lg:w-1/2 flex items-center justify-center mb-6 lg:mb-0 lg:mt-8">
+      <section className="min-h-screen flex flex-col lg:flex-row items-center justify-center bg-header-peach border text-text-color p-4">
+        {/* Image Section */}
+        <div className="w-full lg:w-1/2 flex justify-center lg:mr-4">
           <Image
             src="/assist.jpg" // Replace with your image path
             alt="Your Image Description"
-            width={500} // Adjust width as needed
-            height={500} // Adjust height as needed
+            width={300} // Reduced width
+            height={300} // Reduced height
             className="w-full h-auto shadow-lg"
           />
         </div>
 
         {/* Form Section */}
-        <div className="bg-white p-8 shadow-lg rounded-lg w-full max-w-4xl lg:ml-8">
-          <h2 className="text-3xl font-bold text-center mb-8">
+        <div className="bg-white p-4 shadow-lg rounded-lg w-full lg:w-1/2">
+          <h2 className="text-3xl font-bold text-center mb-6">
             HOW CAN WE ASSIST YOU?
           </h2>
-          <p className='text-center mb-8'>
+          <p className="text-center mb-6">
             Interested in leveraging Taras all-inclusive staffing, recruitment, and payroll services? Simply complete the form below with key details about your requirements, and our team will reach out to you shortly.
           </p>
 
-          <form onSubmit={handleSubmit} className="space-y-6">
+          <form onSubmit={handleSubmit} className="space-y-4">
             {/* Contact Information */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
                 <label htmlFor="fullName" className="block text-sm font-medium">
                   Full Name
@@ -107,10 +107,6 @@ const ContactCollectionForm = () => {
                   required
                 />
               </div>
-            </div>
-
-            {/* Company Information */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               <div>
                 <label htmlFor="companyName" className="block text-sm font-medium">
                   Company Name
@@ -120,34 +116,6 @@ const ContactCollectionForm = () => {
                   id="companyName"
                   name="companyName"
                   value={formData.companyName}
-                  onChange={handleInputChange}
-                  className="mt-1 p-2 block w-full border border-gray-300 rounded-md focus:border-blue-500 focus:ring-blue-500"
-                  required
-                />
-              </div>
-              <div>
-                <label htmlFor="industry" className="block text-sm font-medium">
-                  Industry
-                </label>
-                <input
-                  type="text"
-                  id="industry"
-                  name="industry"
-                  value={formData.industry}
-                  onChange={handleInputChange}
-                  className="mt-1 p-2 block w-full border border-gray-300 rounded-md focus:border-blue-500 focus:ring-blue-500"
-                  required
-                />
-              </div>
-              <div>
-                <label htmlFor="employees" className="block text-sm font-medium">
-                  Number of Employees
-                </label>
-                <input
-                  type="number"
-                  id="employees"
-                  name="employees"
-                  value={formData.employees}
                   onChange={handleInputChange}
                   className="mt-1 p-2 block w-full border border-gray-300 rounded-md focus:border-blue-500 focus:ring-blue-500"
                   required
@@ -214,7 +182,7 @@ const ContactCollectionForm = () => {
             </div>
 
             {/* Privacy Agreement and Submit Button */}
-            <div className="mt-6">
+            <div className="mt-4">
               <p className="text-gray-500 text-sm">
                 By submitting this form, you agree to our Privacy Policy and consent to the processing of your personal information.
               </p>

@@ -13,7 +13,7 @@ const Footer = () => {
             <div className="font-medium text-lg uppercase">Tara</div>
           </Link>
           <p className="mb-4 text-sm md:text-base">
-            22A, Olatunbosun Street, Shonibare Estate, Maryland, Lagos, Nigeria
+            ilorin, Nigeria
           </p>
           <span className="font-semibold">tara@info.com</span>
           <span className="font-semibold">+1 234 567 890</span>

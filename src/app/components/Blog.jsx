@@ -49,7 +49,7 @@ const Blog = () => {
           </div>
         ))
       ) : (
-        <p>Loading posts...</p>
+        <p>Loading posts......</p>
       )}
     </div>
   </section>
